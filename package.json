@@ -1,0 +1,42 @@
+{
+  "name": "generator-jess",
+  "version": "0.0.0",
+  "description": "A generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/jfrazelle/generator-jess",
+  "bugs": "https://github.com/jfrazelle/generator-jess/issues",
+  "author": {
+    "name": "Jessie Frazelle",
+    "email": "",
+    "url": "https://github.com/jfrazelle"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jfrazelle/generator-jess.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.14.0",
+    "chalk": "~0.4.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
