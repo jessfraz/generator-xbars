@@ -28,10 +28,7 @@ describe('jess generator', function () {
             'bower.json',
             'Gruntfile.js',
             'package.json',
-            'public/js/bower_components/jquery/jquery.min.js',
-            'public/js/lib/modernizr.js',
             'public/js/main.js',
-            'public/css/styles.less',
             'views/404.html',
             'views/index.html',
             'views/layouts/main.html'
