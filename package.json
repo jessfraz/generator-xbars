@@ -1,6 +1,6 @@
 {
   "name": "generator-xbars",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A generator for Yeoman, with node, express, handlebars, and bootstrap.",
   "keywords": [
     "yeoman-generator"
