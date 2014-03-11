@@ -5,11 +5,11 @@ var util = require('util'),
     chalk = require('chalk');
 
 
-var JessGenerator = module.exports = function JessGenerator(args, options, config) {
+var XbarsGenerator = module.exports = function XbarsGenerator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
 
   this.on('end', function () {
-    this.installDependencies({ 
+    this.installDependencies({
       skipInstall: options['skip-install'],
       callback: function () {
         this.spawnCommand('grunt', ['init']);
@@ -20,9 +20,9 @@ var JessGenerator = module.exports = function JessGenerator(args, options, confi
   this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
 };
 
-util.inherits(JessGenerator, yeoman.generators.Base);
+util.inherits(XbarsGenerator, yeoman.generators.Base);
 
-JessGenerator.prototype.askFor = function askFor() {
+XbarsGenerator.prototype.askFor = function askFor() {
   var cb = this.async();
 
   // have Yeoman greet the user.
@@ -32,7 +32,7 @@ JessGenerator.prototype.askFor = function askFor() {
   var prompts = [{
     name: 'appname',
     message: 'Project name?'
-  }, 
+  },
   {
     name: 'description',
     message: 'Description?',
@@ -65,29 +65,29 @@ JessGenerator.prototype.askFor = function askFor() {
   }.bind(this));
 };
 
-JessGenerator.prototype.gruntfile = function gruntfile() {
+XbarsGenerator.prototype.gruntfile = function gruntfile() {
   this.copy('Gruntfile.js', 'Gruntfile.js');
 };
 
-JessGenerator.prototype.packageJSON = function packageJSON() {
+XbarsGenerator.prototype.packageJSON = function packageJSON() {
   this.template('_package.json', 'package.json');
 };
 
-JessGenerator.prototype.git = function git() {
+XbarsGenerator.prototype.git = function git() {
   this.copy('gitignore', '.gitignore');
 };
 
-JessGenerator.prototype.bower = function bower() {
+XbarsGenerator.prototype.bower = function bower() {
   this.copy('bowerrc', '.bowerrc');
   this.copy('_bower.json', 'bower.json');
 };
 
-JessGenerator.prototype.h5bp = function h5bp() {
+XbarsGenerator.prototype.h5bp = function h5bp() {
   this.copy('robots.txt', 'public/robots.txt');
   this.copy('favicon.ico', 'public/favicon.ico');
 };
 
-JessGenerator.prototype.appFiles = function appFiles() {
+XbarsGenerator.prototype.appFiles = function appFiles() {
   this.template('app.js', 'app.js');
   this.template('main.html', 'views/layouts/main.html');
   this.write('views/index.html', '<p class="lead">Hello World</p>');
@@ -95,7 +95,7 @@ JessGenerator.prototype.appFiles = function appFiles() {
   this.write('public/js/main.js', '');
 };
 
-JessGenerator.prototype.app = function app() {
+XbarsGenerator.prototype.app = function app() {
   this.mkdir('public/css');
   this.mkdir('public/js');
   this.mkdir('public/img');
