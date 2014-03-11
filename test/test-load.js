@@ -3,7 +3,7 @@
 
 var assert = require('assert');
 
-describe('jess generator', function () {
+describe('xbars generator', function () {
     it('can be imported without blowing up', function () {
         var app = require('../app');
         assert(app !== undefined);

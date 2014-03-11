@@ -1,12 +1,12 @@
 {
-  "name": "generator-jess",
+  "name": "generator-xbars",
   "version": "0.0.0",
-  "description": "A generator for Yeoman",
+  "description": "A generator for Yeoman, with node, express, handlebars, and bootstrap.",
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/jfrazelle/generator-jess",
-  "bugs": "https://github.com/jfrazelle/generator-jess/issues",
+  "homepage": "https://github.com/jfrazelle/generator-xbars",
+  "bugs": "https://github.com/jfrazelle/generator-xbars/issues",
   "author": {
     "name": "Jessie Frazelle",
     "email": "",
@@ -15,7 +15,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jfrazelle/generator-jess.git"
+    "url": "git://github.com/jfrazelle/generator-xbars.git"
   },
   "scripts": {
     "test": "mocha"
