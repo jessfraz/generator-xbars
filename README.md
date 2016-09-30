@@ -1,4 +1,4 @@
-# generator-xbars [![Build Status](https://secure.travis-ci.org/jfrazelle/generator-xbars.png?branch=master)](https://travis-ci.org/jfrazelle/generator-xbars)
+# generator-xbars [![Build Status](https://secure.travis-ci.org/jessfraz/generator-xbars.png?branch=master)](https://travis-ci.org/jessfraz/generator-xbars)
 
 A generator for [Yeoman](http://yeoman.io).
 

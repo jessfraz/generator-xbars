@@ -5,17 +5,17 @@
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/jfrazelle/generator-xbars",
-  "bugs": "https://github.com/jfrazelle/generator-xbars/issues",
+  "homepage": "https://github.com/jessfraz/generator-xbars",
+  "bugs": "https://github.com/jessfraz/generator-xbars/issues",
   "author": {
     "name": "Jessie Frazelle",
     "email": "",
-    "url": "https://github.com/jfrazelle"
+    "url": "https://github.com/jessfraz"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jfrazelle/generator-xbars.git"
+    "url": "git://github.com/jessfraz/generator-xbars.git"
   },
   "scripts": {
     "test": "mocha"
